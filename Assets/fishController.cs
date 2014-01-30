@@ -12,6 +12,6 @@ public class fishController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position -= Vector3.left * velocity;
+		transform.position -= Vector3.left * velocity * Time.deltaTime;
 	}
 }
