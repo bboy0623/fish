@@ -12,6 +12,6 @@ public class fishController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position.Set(transform.position.x + velocity, transform.position.y, transform.position.z);
+		transform.position -= Vector3.left * velocity;
 	}
 }
